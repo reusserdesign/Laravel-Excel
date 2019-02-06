@@ -235,7 +235,7 @@ class Sheet
             }
 
             if ($import instanceof ToArray) {
-                $import->array($this->toArray($import, $startRow, null, $calculatesFormulas));
+                $import->array($this->toArray($import, $startRow, null, $calculatesFormulas), $this->worksheet);
             }
         }
 
